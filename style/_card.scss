@@ -1,0 +1,69 @@
+@keyframes card-on-visible {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@for $i from 1 to 3 {
+    .card:nth-child(#{$i}n) {
+        animation: card-on-visible 10s forwards;
+        animation-delay: #{$i}s;
+    }
+}
+
+.card {
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background: #F2F3F7;
+    box-shadow: 6px 6px 16px #BECDE2, -6px -6px 16px #FFFFFF;
+    border-radius: 40px;
+
+    height: 37rem;
+    width: 30rem;
+    max-width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .card--icon {
+        margin: 2rem auto;
+        width: 6.2rem;
+        height: 6.2rem;
+    }
+
+    .card--title {
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .card--text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        text-align: center;
+
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .card--btn {
+        margin: 1rem auto;
+        border-radius: 1rem 1rem;
+        max-width: 70%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
