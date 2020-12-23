@@ -1,9 +1,17 @@
 .project {
-
-    z-index: 1;
-    padding-top: 50vh;
     height: 150vh;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
     background-image: url("./../asset/img/project_bg.svg");
     background-size: cover;
+
+    .container--project {
+        height: 100%;
+        margin: 0rem 5rem 5rem 5rem;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.27 );
+        backdrop-filter: blur( 8px );
+        border-radius: 20px;
+    }
 
 }

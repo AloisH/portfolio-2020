@@ -136,17 +136,23 @@ h2 {
     opacity: 100%;
   }
 }
-.card:nth-child(1n) {
-  animation: card-on-visible 10s forwards;
+.card:nth-child(1) {
+  animation: card-on-visible 2.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.card:nth-child(2) {
+  animation: card-on-visible 2.5s forwards;
   animation-delay: 1s;
 }
 
-.card:nth-child(2n) {
-  animation: card-on-visible 10s forwards;
-  animation-delay: 2s;
+.card:nth-child(3) {
+  animation: card-on-visible 2.5s forwards;
+  animation-delay: 1.5s;
 }
 
 .card {
+  opacity: 0;
   margin: 1rem;
   display: flex;
   flex-direction: row;
@@ -251,11 +257,19 @@ h2 {
 }
 
 .project {
-  z-index: 1;
-  padding-top: 50vh;
   height: 150vh;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
   background-image: url("/project_bg.f213a50a.svg");
   background-size: cover;
+}
+.project .container--project {
+  height: 100%;
+  margin: 0rem 5rem 5rem 5rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.27);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */

@@ -7,14 +7,15 @@
     }
 }
 
-@for $i from 1 to 3 {
-    .card:nth-child(#{$i}n) {
-        animation: card-on-visible 10s forwards;
-        animation-delay: #{$i}s;
+@for $i from 1 to 4 {
+    .card:nth-child(#{$i}) {
+        animation: card-on-visible 2.5s forwards;
+        animation-delay: #{$i * 0.5}s;
     }
 }
 
 .card {
+    opacity: 0;
     margin: 1rem;
 
     display: flex;
