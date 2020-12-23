@@ -1,8 +1,5 @@
 # Ignore node_module
 node_modules/
 
-# Ignore build file
-dist/
-
 # Ignore cache
 .cache/
