@@ -1,64 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.scss">
+    <link rel="icon" href="./favicon.ico">
     <title>Alois Heloir</title>
 </head>
+
 <body>
     <script src="./script/index.js"></script>
 
     <section class="main">
         <div class="main--container">
-            <div class="title">
-                <img src="./asset/img/main_title.svg" alt="">
+            <div class="body">
+                Hey !
+                <br>
+                I am  <img class="title" src="./asset/img/main_title.svg" alt="">.
+                <br>
+                I develop and design <span class="other-font">software</span>.
+                <br>
+                Welcome to my portfolio!
             </div>
+            <a href="#project" class="btn-primary">
+                <span></span> 
+                View my projects
+            </a>
         </div>
     </section>
 
-    <section class="project">
+    <section class="project" id="project">
         <div class="container--project">
-            
+            <div class="title">
+                My projects
+            </div>
+
+            <div class="container--project--list">
+                <div class="item">
+                    <div class="item--left">
+                        <div class="item--img">
+                            <img src="asset/img/42sh.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item--right">
+                        <div class="item--title">
+                            42sh
+                        </div>
+                        <div class="item--labels">
+                            <div class="label label-c">C</div>
+                        </div>
+                        <div class="item--body">
+                            ‘42sh’ is a posix-compliant shell interpretor done in the scope of our ING1 project at EPITA.
+                        </div>
+                        <div class="item--bottom">
+                            <div class="action">
+
+                            </div>
+                            <div class="item--date">
+                                November 2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item reverse">
+                    <div class="item--left">
+                        <div class="item--title">
+                            Pointless Adventure
+                        </div>
+                        <div class="item--labels">
+                            <div class="label label-csharp">C#</div>
+                            <div class="label label-unity">Unity</div>
+                        </div>
+                        <div class="item--body">
+                            Pointless Adventure is a online mutliplayer co-op video game made with Unity 
+                        </div>
+                        <div class="item--bottom">
+                            <div class="action">
+                                <a href="https://loupdallier.github.io/Test/" target="_blank" class="btn-secondary">Demo</a>
+                            </div>
+                            <div class="item--date">
+                                May 2019
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item--right">
+                        <div class="item--img">
+                            <img src="asset/img/pointless-adventure.PNG" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item--left">
+                        <div class="item--img">
+                            <img src="asset/img/imalys.png" alt="">
+                        </div>
+                    </div>
+                   <div class="item--right">
+                        <div class="item--title">
+                            Imalys
+                        </div>
+                        <div class="item--labels">
+                            <div class="label label-php">Php</div>
+                            <div class="label label-javascript">Js</div>
+                            <div class="label label-css">Css</div>
+                            <div class="label label-html">Html</div>
+                        </div>
+                        <div class="item--body">
+                            Imaly is a complete website made in Php to handle information about medical data
+                        </div>
+                        <div class="item--bottom">
+                            <div class="action">
+                                <a href="#" class="btn-secondary">Github</a>
+                            </div>
+                            <div class="item--date">
+                                July 2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item reverse">
+                    <div class="item--left">
+                        <div class="item--title">
+                            ZombsCastle
+                        </div>
+                        <div class="item--labels">
+                            <div class="label label-unity">Unity</div>
+                            <div class="label label-csharp">C#</div>
+                        </div>
+                        <div class="item--body">
+                            ZombsCastle is a 2d tower defense video game available on the google play store
+                        </div>
+                        <div class="item--bottom">
+                            <div class="action">
+                                <a href="https://play.google.com/store/apps/details?id=com.Heloir.ProjetZombsCastle" target="_blank" class="btn-secondary">Demo</a>
+                            </div>
+                            <div class="item--date">
+                                August 2019
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item--right">
+                        <div class="item--img">
+                            <img src="asset/img/zombscastle.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-more">
+                    <div class="card--project">
+                        <div class="card--picture">
+                            <img src="asset/img/logoOCR.png" alt="">
+                        </div>
+                        <div class="card--title">
+                            OCR
+                        </div>
+                        <div class="card--label">
+                            <div class="label label-c">C</div>
+                        </div>
+                        <div class="card--body">
+                            Optical Character Recognition on image using a neural networkin C
+                        </div>
+                    </div>
+
+                    <div class="card--project">
+                        <div class="card--picture">
+                            <img src="asset/img/web-tarot.png" alt="">
+                        </div>
+                        <div class="card--title">
+                            Web-Tarot-Calculator
+                        </div>
+                        <div class="card--label">
+                            <div class="label label-javascript">Js</div>
+                            <div class="label label-html">Html</div>
+                            <div class="label label-css">Css</div>
+                        </div>
+                        <div class="card--body">
+                            Score calculator for the board game "Tarot"
+                        </div>
+                    </div>
+
+                    <div class="card--project">
+                        <div class="card--picture">
+                            <img src="asset/img/discord-bot.webp" alt="">
+                        </div>
+                        <div class="card--title">
+                            Discord Morpion bot
+                        </div>
+                        <div class="card--label">
+                            <div class="label label-python">NodeJs</div>
+                            <div class="label label-javascript">Js</div>
+                        </div>
+                        <div class="card--body">
+                            A discord bot to play morpion with your friend
+                        </div>
+                    </div>
+
+                    <div class="card--project">
+                        <div class="card--picture">
+                            <img src="asset/img/sorting.png" alt="">
+                        </div>
+                        <div class="card--title">
+                            Sorting Algo Visualizer
+                        </div>
+                        <div class="card--label">
+                            <div class="label label-javascript">Js</div>
+                            <div class="label label-html">Html</div>
+                            <div class="label label-css">Css</div>
+                        </div>
+                        <div class="card--body">
+                            A website to show 
+                            sorting algorithm
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="skill">
-        <div class="card">
-            <div class="card--main">
-                <div class="card--icon"><img src="./asset/img/brush.svg" alt="brush-icon"></div>
-                <h1 class="card--title">Designer</h1>
-            </div>
-            <div class="card--text">
-                <p class="card--text">I create modern UI and UX design</p>
-                <a href="" class="card--btn btn-primary btn-normal">Plus d'informatin</a>
-            </div>
+        <div class="title">
+            My skills
         </div>
-        <div class="card">
-            <div class="card--main">
-                <div class="card--icon"><img src="./asset/img/dev.svg" alt="dev-icon"></div>
-                <h1 class="card--title">Developer</h1>
+        <div class="container">
+            <div class="card">
+                <div class="card--main">
+                    <h1 class="card--title">Web developer</h1>
+                </div>
+                <div class="card--text">
+                    <p class="card--text">
+                        <div class="label-card">Html</div>
+                        <div class="label-card">Css</div>
+                        <div class="label-card">Javascript</div>
+                        <div class="label-card">Typescript</div>
+                        <div class="label-card">Php</div>
+                    </p>
+                </div>
             </div>
-            <div class="card--text">
-                <p class="card--text">Develope any type of application</p>
-                <a href="" class="card--btn btn-primary btn-normal">Plus d'informatin</a>
+            <div class="card">
+                <div class="card--main">
+                    <h1 class="card--title">Programmation</h1>
+                </div>
+                <div class="card--text">
+                    <p class="card--text">
+                        <div class="label-card">C</div>
+                        <div class="label-card">C++</div>
+                        <div class="label-card">C#</div>
+                        <div class="label-card">Python</div>
+                        <div class="label-card">MySql</div>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card--main">
-                <div class="card--icon"><img src="./asset/img/devops.svg" alt="devops-icon"></div>
-                <h1 class="card--title">DevOps</h1>
-            </div>
-            <div class="card--text">
-                <p class="card--text">Setup server and make them runing</p>
-                <a href="" class="card--btn btn-primary btn-normal">Plus d'informatin</a>
+            <div class="card">
+                <div class="card--main">
+                    <h1 class="card--title">Others</h1>
+                </div>
+                <div class="card--text">
+                    <p class="card--text">
+                        <div class="label-card">Git</div>
+                        <div class="label-card">Linux</div>
+                        <div class="label-card">Latex</div>
+                        <div class="label-card">Pair programming</div>
+                        <div class="label-card">TDD</div>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="footer">
         <div class="footer--right">
-            <a target="_blank" href="https://www.linkedin.com/in/alo%C3%AFs-h%C3%A9loir-03b9b0193/" class="btn-primary btn-normal">
+            <a target="_blank" href="https://www.linkedin.com/in/alo%C3%AFs-h%C3%A9loir-03b9b0193/"
+                class="btn-primary btn-normal">
                 <img src="./asset/img/linkedin.svg" alt="linkeding_svg">
                 linkedin
             </a>
@@ -68,14 +284,18 @@
             </a>
             <h2 class="footer--title">
                 <img src="./asset/img/croco.svg" alt="croco_svg">
-                Made by Alois Heloir - 2020
+                Made by Alois Heloir - 2021
             </h2>
         </div>
         <div class="footer--left">
             <div class="footer--btn">
-                <button class="btn-secondary btn-giant">Get in touch</button>
+                <a href="mailto:heloir.alois@live.fr" class="btn-secondary btn-giant">Get in touch</a>
             </div>
         </div>
+    </section>
+
+    <section class="modal project--list">
+        Voici ma liste
     </section>
 
 </body>

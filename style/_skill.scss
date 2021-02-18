@@ -1,8 +1,18 @@
 .skill {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 
-    margin: 8rem 0rem;
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;	
+	}
+
+	.title {
+		margin: 4rem 0rem;
+
+		text-align: center;
+		font-family: 'Pacifico';
+		font-weight: 900;
+		font-size: 5rem;
+	}
 }

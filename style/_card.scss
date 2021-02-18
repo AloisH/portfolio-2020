@@ -1,70 +1,64 @@
-@keyframes card-on-visible {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@for $i from 1 to 4 {
-    .card:nth-child(#{$i}) {
-        animation: card-on-visible 2.5s forwards;
-        animation-delay: #{$i * 0.5}s;
-    }
-}
-
 .card {
-    opacity: 0;
-    margin: 1rem;
+	opacity: 1;
+	margin: 1rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 
-    background: #F2F3F7;
-    box-shadow: 6px 6px 16px #BECDE2, -6px -6px 16px #FFFFFF;
-    border-radius: 40px;
+	background: #f2f3f7;
+	box-shadow: 6px 6px 16px #becde2, -6px -6px 16px #ffffff;
+	border-radius: 40px;
 
-    height: 37rem;
-    width: 30rem;
-    max-width: 30rem;
+	height: 37rem;
+	width: 30rem;
+	max-width: 30rem;
 
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    .card--icon {
-        margin: 2rem auto;
-        width: 6.2rem;
-        height: 6.2rem;
-    }
+	.label-card {
+		color: #444444;
+		padding: 0.3rem;
+		margin: 1rem;
+		background: #f2f3f7;
+		box-shadow: inset 6px 6px 16px #becde2, -6px -6px 16px #ffffff;
+		border-radius: 40px;
+		font-weight: 900;
+	}
 
-    .card--title {
-        font-family: 'Roboto';
-        font-weight: 900;
-        font-size: 4rem;
-        text-align: center;
-    }
+	.card--icon {
+		margin: 2rem auto;
+		width: 6.2rem;
+		height: 6.2rem;
+	}
 
-    .card--text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2rem;
-        text-align: center;
+	.card--title {
+		font-family: 'Roboto';
+		font-weight: 900;
+		font-size: 3rem;
+		text-align: center;
+	}
 
-        margin: 1rem;
-        margin-bottom: 3rem;
-    }
+	.card--text {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 2rem;
+		text-align: center;
 
-    .card--btn {
-        margin: 1rem auto;
-        border-radius: 1rem 1rem;
-        max-width: 70%;
-    }
+		margin: 1rem;
+		margin-bottom: 3rem;
+	}
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+	.card--btn {
+		margin: 1rem auto;
+		border-radius: 1rem 1rem;
+		max-width: 70%;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
 }
